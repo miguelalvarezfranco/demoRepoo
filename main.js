@@ -27,7 +27,7 @@ let renderPokemonData = data =>{
     pokeImg.setAttribute('src', sprite);
     pokeId.textContent = `# ${data.id}`;
     pokeTypes.textContent = data.types[0].type.name;
-    pokeStats.textContent = data.moves[0].move.name;
+    pokeStats.textContent = data.moves[0].stats.name;
     setCardColor(types);
 
 }
